@@ -1,5 +1,5 @@
 import React from 'react'
-import './TodoListItem.css'
+import './styles.css'
 
 export const TodoListItem = ({ label, important = false }) => {
 

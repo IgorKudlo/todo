@@ -1,6 +1,6 @@
 import React from 'react'
-import {TodoListItem} from './TodoListItem'
-import './TodoList.css'
+import {TodoListItem} from '../TodoListItem'
+import './styles.css'
 
 export const TodoList = ({ todos }) => {
 
