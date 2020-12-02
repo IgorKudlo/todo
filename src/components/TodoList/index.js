@@ -2,7 +2,7 @@ import React from 'react'
 import {TodoListItem} from '../TodoListItem'
 import './styles.css'
 
-export const TodoList = ({ todos }) => {
+export const TodoList = ({ todos, onDeleted }) => {
 
   const elements = todos.map(item => (
     <li
@@ -12,6 +12,7 @@ export const TodoList = ({ todos }) => {
       <TodoListItem
         label={item.label}
         important={item.important}
+        onDeleted={() => onDeleted(item.id)}
       />
     </li>
   ))
