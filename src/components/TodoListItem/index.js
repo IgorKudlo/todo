@@ -9,8 +9,8 @@ export class TodoListItem extends Component {
   }
 
   onLabelClick = () => {
-    this.setState(prev => ({
-      done: !prev.done,
+    this.setState(({done}) => ({
+      done: !done,
     }))
   }
 
